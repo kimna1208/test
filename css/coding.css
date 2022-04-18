@@ -153,7 +153,6 @@ footer {
 }
 
 /*=======tablet======*/
-
 @media screen and (min-width:768px) {
     header nav {
         display: block;
@@ -164,7 +163,7 @@ footer {
     }
 
 
-        /* gnb */
+    /* gnb */
     .gnb {
         flex-direction: row; /*rkfhfh*/
     }
@@ -212,7 +211,7 @@ footer {
        display: block; 
     }
 
-    .coding-flex-box .coding-img > img {
+    .coding-flex-box .coding-img > img { /*이미지 박스를 꽉채움*/
         width: 100%;
     }
 
@@ -242,5 +241,49 @@ footer {
 
     .footer-flex-box > address{ /*크기를 넣어서 간격으로 밀기*/
         width: 80%;
+    }
+}
+
+/*======= pc ======*/
+@media screen and (min-width:1024px) {
+    /* header */
+    .gnb > li > a {
+        padding: 20px;
+    }
+
+    /* main */
+    section > h2 { /*글씨 크기수정*/
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 26px;
+    }
+
+    /* coding */
+    .coding-flex-box > div:first-child {
+        width: 55%;
+    }
+
+    .coding-flex-box > div:last-child { /*이미지 사이즈*/
+        width: 25%;
+        text-align: center; /*박스가 가운대*/
+    }
+
+    .coding-flex-box > div:first-child > p {
+        font-size: 18px;
+    }
+
+    .coding-flex-box .coding-img > img { /*이미지 박스를 조절로 크기조정*/
+        width: 80%;
+    }
+
+    /* saying */
+    .saying p {
+        margin: 30px 20%;
+        font-size: 18px;
+    }
+
+    .saying strong {
+        margin-bottom: 30px;
+        font-size: 16px;
     }
 }
