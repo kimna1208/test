@@ -183,4 +183,48 @@ footer {
         border-left: 0;
         border-right: 0;
     }
+
+    /* coding */
+    .coding-flex-box {
+        display: flex; /*pc에서는 수평으로 나오기 떄문에 플렉스*/
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .coding-flex-box > div:first-child {
+        width: 60%;
+    }
+
+    .coding-flex-box > div:last-child {
+        width: 30%;
+    }
+
+    .coding-flex-box > div {
+        width: 50%;
+    }
+   
+    .coding-flex-box .codingtxt {
+       margin: 0;
+    }
+   
+    .coding-flex-box .coding-img {
+       display: block; 
+    }
+
+    .coding-flex-box .coding-img > img {
+        width: 100%;
+    }
+
+    /*program*/
+    .program-flex-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; /**간격여백*/
+        width: 100%;
+    }
+
+    .program-flex-box > div {
+        width: 23%;
+    }
 }
